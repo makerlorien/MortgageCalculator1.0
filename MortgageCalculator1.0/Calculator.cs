@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MortgageCalculator1._0
 {
     public class Calculator
     {
         /*
-     * M = P * ( (r*(1+r)^n) / ((1 + r)^n - 1) )
-     * 
-     * M is monthly payment
-     * P is principal
-     * r is monthly interest rate
-     * n is number of payments (months)
-     */
+         * M = P * ( (r*(1+r)^n) / ((1 + r)^n - 1) )
+         * 
+         * M is monthly payment
+         * P is principal
+         * r is monthly interest rate
+         * n is number of payments (months)
+         */
 
         public Calculator()
         {
