@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MortgageCalculator1._0
+﻿namespace MortgageCalculator1._0
 {
     public class Calculator
     {
@@ -15,11 +13,6 @@ namespace MortgageCalculator1._0
 
         public Calculator()
         {
-        }
-
-        public decimal CalculatePurchasePrice(int term, decimal rate, decimal monthlyPayment, decimal downPayment)
-        {
-            throw new NotImplementedException();
         }
 
         public decimal CalculateMonthlyPayment(int y, decimal ar, decimal pp, decimal dp)
@@ -76,11 +69,6 @@ namespace MortgageCalculator1._0
                 M = (r * x) / (z - 1);
             }
             return M;
-        }
-
-        public decimal CalculateDownPayment(int term, decimal rate, decimal purchasePrice, decimal monthlyPayment)
-        {
-            throw new NotImplementedException();
         }
     }
 }
