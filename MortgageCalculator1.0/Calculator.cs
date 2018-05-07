@@ -67,8 +67,14 @@ namespace MortgageCalculator1._0
                 z = temp;
             }
 
-            M = (r * x) / (z - 1);
-
+            if (z == 1)
+            {
+                M = P / n;
+            }
+            else
+            {
+                M = (r * x) / (z - 1);
+            }
             return M;
         }
 
