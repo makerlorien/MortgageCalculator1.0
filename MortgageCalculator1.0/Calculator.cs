@@ -66,7 +66,7 @@
             }
             else
             {
-                M = (r * x) / (z - 1);
+                M = P * ((r * x) / (z - 1));
             }
             return M;
         }
