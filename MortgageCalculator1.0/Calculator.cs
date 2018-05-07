@@ -3,7 +3,7 @@
     public class Calculator
     {
         /*
-         * M = P * ( (r*(1+r)^n) / ((1 + r)^n - 1) )
+         * M = P * ( (r*(1 + r)^n) / ((1 + r)^n - 1) )
          * 
          * M is monthly payment
          * P is principal
@@ -19,16 +19,20 @@
         {
             decimal M = 0.0M;
 
+            // Amount financed
             decimal P = pp - dp;
 
+            // Monthly rate
             decimal r = ar / 12;
 
+            // Months of payments
             int n = y * 12;
 
             decimal x = 0;
 
             if (n > 0)
             {
+                // Power formula for the numerator
                 decimal temp = 1;
 
                 int i = 0;
@@ -47,6 +51,7 @@
 
             if (n > 0)
             {
+                // Power formula for the denominator
                 decimal temp = 1;
 
                 int i = 1;
@@ -62,6 +67,7 @@
 
             if (z == 1)
             {
+                // Prevent divide by zero error
                 M = P / n;
             }
             else
