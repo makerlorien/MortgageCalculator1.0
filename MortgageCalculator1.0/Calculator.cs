@@ -15,7 +15,7 @@
         {
         }
 
-        public decimal CalculateMonthlyPayment(int y, decimal ar, decimal pp, decimal dp)
+        public decimal Calculate(int y, decimal ar, decimal pp, decimal dp)
         {
             decimal M = 0.0M;
 
